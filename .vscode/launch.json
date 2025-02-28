@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "CarersVicDEV8",
+            "environmentName": "CarersVicDev8",
             "startupObjectType": "Page",
             "startupObjectId": 16,
             "breakOnError": "All",

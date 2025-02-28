@@ -52,6 +52,29 @@ report 50108 "CR Credit Card Reconcilliation"
             column(Description; Description)
             {
             }
+            column(OpeningBalance; OpeningBalance)
+            {
+            }
+
+            trigger OnPreDataItem()
+            var
+                AccountNo: text;
+                FromDate: Date;
+                ToDate: Date;
+            begin
+                FromDate := GetRangeMin("Posting Date");
+                AccountNo := GetFilter("G/L Account No.");
+
+                //Opening Balance
+                GLEntry2.Reset;
+                GLEntry2.Setrange(GLEntry2."G/L Account No.", AccountNo);
+                if FromDate <> 0D Then
+                    GLEntry2.SetFilter(GLEntry2."Posting Date", '..%1', FromDate);
+                if GLEntry2.FindSet() then
+                    repeat
+                        OpeningBalance := OpeningBalance + GLEntry2.Amount;
+                    until GLEntry2.Next() = 0;
+            end;
         }
     }
     requestpage
@@ -76,6 +99,9 @@ report 50108 "CR Credit Card Reconcilliation"
     }
     var
         ShowDetails: Boolean;
+        GLEntry2: Record "G/L Entry";
+        OpeningBalance: Decimal;
+        ClosingBalance: Decimal;
 
     local procedure GetBalAccName(ParBalAccType: Enum "Gen. Journal Account Type"; ParBalAccNo: Code[20]) RetValue: Text
     var
