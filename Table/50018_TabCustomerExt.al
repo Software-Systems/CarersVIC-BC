@@ -12,17 +12,4 @@ tableextension 50018 "Customer Ext" extends Customer
             Caption = 'Invoice Delivery method';
         }
     }
-
-    keys
-    {
-        // Add changes to keys here
-    }
-
-    fieldgroups
-    {
-        // Add changes to field groups here
-    }
-
-    var
-        myInt: Integer;
 }

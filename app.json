@@ -14,19 +14,14 @@
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "24.0.0.0",
+  "features": [ "TranslationFile", "GenerateCaptions" ],
   "idRanges": [
     {
       "from": 50000,
       "to": 99999
     }
   ],
-  "resourceExposurePolicy": {
-    "allowDebugging": true,
-    "allowDownloadingSource": true,
-    "includeSourceInSymbolFile": true
-  },
-  "runtime": "13.0",
-  "features": [
-    "NoImplicitWith"
-  ]
+  "contextSensitiveHelpUrl": "http://www.microsoft.com",
+  "resourceExposurePolicy": {"allowDebugging": true,"allowDownloadingSource": true,"includeSourceInSymbolFile": true},
+  "runtime": "14.0"
 }

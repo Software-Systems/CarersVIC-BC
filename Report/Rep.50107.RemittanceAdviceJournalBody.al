@@ -3,7 +3,7 @@ report 50107 "Carer Remitt. Adv Email Body"
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
     DefaultLayout = Word;
-    WordLayout = './Report/Layout/CarersVICRemitAdvEmailBody.docx';
+    //WordLayout = './Report/Layout/CarersVICRemitAdvEmailBody.docx';
 
     dataset
     {
@@ -12,6 +12,4 @@ report 50107 "Carer Remitt. Adv Email Body"
             DataItemTableView = sorting("Vendor No.") where("Document Type" = const(Payment));
         }
     }
-
-
 }

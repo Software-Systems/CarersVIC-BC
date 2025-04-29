@@ -8,7 +8,7 @@
             "environmentType": "Sandbox",
             "environmentName": "CarersVicDev8",
             "startupObjectType": "Page",
-            "startupObjectId": 16,
+            "startupObjectId": 25,
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
