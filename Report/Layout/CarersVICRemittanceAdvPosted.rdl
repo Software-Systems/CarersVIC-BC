@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+  <am:AuthoringMetadata>
+    <am:CreatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.0.20283.0</am:Version>
+    </am:CreatedBy>
+    <am:UpdatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.0.20283.0</am:Version>
+    </am:UpdatedBy>
+    <am:LastModifiedTimestamp>2025-05-19T09:28:43.8862112Z</am:LastModifiedTimestamp>
+  </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
@@ -69,7 +80,7 @@
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>1.35786cm</Height>
+                                    <Height>2.18689cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -173,8 +184,9 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Image Name="Image3">
-                                            <Source>Embedded</Source>
-                                            <Value>Logo</Value>
+                                            <Source>Database</Source>
+                                            <Value>=Fields!CompanyPicture.Value</Value>
+                                            <MIMEType>image/bmp</MIMEType>
                                             <Sizing>FitProportional</Sizing>
                                             <Style>
                                               <Border>
@@ -3218,7 +3230,6 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>3</ColSpan>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -3256,7 +3267,6 @@
                                               <PaddingTop>2pt</PaddingTop>
                                             </Style>
                                           </Textbox>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell>
@@ -3293,7 +3303,6 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -3331,7 +3340,6 @@
                                               <PaddingTop>2pt</PaddingTop>
                                             </Style>
                                           </Textbox>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell>
@@ -3369,7 +3377,6 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -3408,7 +3415,6 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -4862,7 +4868,7 @@
                                 </TablixMembers>
                               </TablixRowHierarchy>
                               <DataSetName>DataSet_Result</DataSetName>
-                              <Height>11.22518cm</Height>
+                              <Height>12.05421cm</Height>
                               <Width>18.64778cm</Width>
                               <Style />
                             </Tablix>
@@ -5108,6 +5114,9 @@ tB/4R+5jjdSlxAEKI7Ar99ckgjjPajQNTmNe+L194b8GeGbrR9R0bdcaMl8bPxFcSvfzrsBHMQxkjILt
         </Field>
         <Field Name="CompanyInfoEmail">
           <DataField>CompanyInfoEmail</DataField>
+        </Field>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
         </Field>
         <Field Name="CompanyInfoWeb">
           <DataField>CompanyInfoWeb</DataField>

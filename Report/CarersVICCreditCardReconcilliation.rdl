@@ -9,7 +9,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.0.20283.0</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-02-21T13:53:03.9565785Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-05-19T09:15:36.1282073Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -895,7 +895,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Amount.Value) + First(Fields!OpeningBalance.Value)</Value>
+                                  <Value>=IIF(Fields!GLClosingBalance.Value&lt;&gt;0,Fields!GLClosingBalance.Value,
+Sum(Fields!Amount.Value) + First(Fields!OpeningBalance.Value))</Value>
                                   <Style>
                                     <FontStyle>Italic</FontStyle>
                                     <FontFamily>Calibri</FontFamily>
@@ -921,6 +922,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -1380,6 +1382,12 @@ End Function
         </Field>
         <Field Name="OpeningBalanceFormat">
           <DataField>OpeningBalanceFormat</DataField>
+        </Field>
+        <Field Name="GLClosingBalance">
+          <DataField>GLClosingBalance</DataField>
+        </Field>
+        <Field Name="GLClosingBalanceFormat">
+          <DataField>GLClosingBalanceFormat</DataField>
         </Field>
       </Fields>
       <Query>

@@ -1618,6 +1618,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report CR Credit Card Reconcilliation - Control Options - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 2106384933 - Control 170071418 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GL Closing Balance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report CR Credit Card Reconcilliation - Control GLClosingBalance - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 2106384933 - Control 3461750827 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Show Details</source>
           <note from="Developer" annotates="general" priority="2"></note>

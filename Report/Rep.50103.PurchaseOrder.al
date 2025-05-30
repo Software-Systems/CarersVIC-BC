@@ -808,10 +808,10 @@ report 50103 "CarersVIC Purchase - Order"
         OnInitReportForGlobalVariable(IsHandled, LegalOfficeTxt, LegalOfficeLbl, CustomGiroTxt, CustomGiroLbl);
 #if not CLEAN23
         if not IsHandled then begin
-            LegalOfficeTxt := CompanyInfo.GetLegalOffice();
-            LegalOfficeLbl := CompanyInfo.GetLegalOfficeLbl();
-            CustomGiroTxt := CompanyInfo.GetCustomGiro();
-            CustomGiroLbl := CompanyInfo.GetCustomGiroLbl();
+            // LegalOfficeTxt := CompanyInfo.GetLegalOffice();
+            // LegalOfficeLbl := CompanyInfo.GetLegalOfficeLbl();
+            // CustomGiroTxt := CompanyInfo.GetCustomGiro();
+            // CustomGiroLbl := CompanyInfo.GetCustomGiroLbl();
         end;
 #endif
     end;

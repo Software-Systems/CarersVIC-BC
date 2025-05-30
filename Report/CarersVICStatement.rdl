@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+  <am:AuthoringMetadata>
+    <am:CreatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.0.20283.0</am:Version>
+    </am:CreatedBy>
+    <am:UpdatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.0.20283.0</am:Version>
+    </am:UpdatedBy>
+    <am:LastModifiedTimestamp>2025-05-19T09:38:39.9564643Z</am:LastModifiedTimestamp>
+  </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
@@ -19,7 +30,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>19.75336cm</Width>
+                  <Width>18.49389cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -34,19 +45,19 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>3.92775cm</Width>
+                                    <Width>3.99763cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>3.92772cm</Width>
+                                    <Width>3.82188cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>3.92775cm</Width>
+                                    <Width>3.8668cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>3.92775cm</Width>
+                                    <Width>3.2704cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>3.62079cm</Width>
+                                    <Width>3.11558cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>0.30697cm</Width>
@@ -476,7 +487,7 @@
                               <Top>4.02645cm</Top>
                               <Left>0.11463cm</Left>
                               <Height>1.07598cm</Height>
-                              <Width>19.63873cm</Width>
+                              <Width>18.37926cm</Width>
                               <Style>
                                 <Border>
                                   <Style>Solid</Style>
@@ -641,7 +652,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>19.63873cm</Width>
+                                    <Width>18.32954cm</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
@@ -656,7 +667,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                                                 <TablixBody>
                                                   <TablixColumns>
                                                     <TablixColumn>
-                                                      <Width>3.56249cm</Width>
+                                                      <Width>2.36793cm</Width>
                                                     </TablixColumn>
                                                     <TablixColumn>
                                                       <Width>3.51017cm</Width>
@@ -1518,7 +1529,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                                                   </TablixMembers>
                                                 </TablixRowHierarchy>
                                                 <Height>1.4111cm</Height>
-                                                <Width>19.5241cm</Width>
+                                                <Width>18.32954cm</Width>
                                                 <Style />
                                               </Tablix>
                                             </ReportItems>
@@ -1554,7 +1565,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                               <Top>0.03171cm</Top>
                               <Left>0.11463cm</Left>
                               <Height>3.22057cm</Height>
-                              <Width>19.63873cm</Width>
+                              <Width>18.32954cm</Width>
                               <ZIndex>2</ZIndex>
                               <Style />
                             </Tablix>
@@ -1610,7 +1621,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                               <Top>1.29431in</Top>
                               <Left>0.04513in</Left>
                               <Height>5pt</Height>
-                              <Width>7.73178in</Width>
+                              <Width>7.18665in</Width>
                               <ZIndex>4</ZIndex>
                               <Style>
                                 <Border>
@@ -1643,10 +1654,10 @@ Cstr(Fields!PaymentTermsDesc.Value)
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox320</rd:DefaultName>
-                              <Top>2.06438in</Top>
+                              <Top>2.06439in</Top>
                               <Left>0in</Left>
                               <Height>5pt</Height>
-                              <Width>7.77691in</Width>
+                              <Width>7.23178in</Width>
                               <ZIndex>5</ZIndex>
                               <Style>
                                 <Border>
@@ -2326,14 +2337,14 @@ Cstr(Fields!PaymentTermsDesc.Value)
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <Height>11.33558cm</Height>
-            <Width>19.75336cm</Width>
+            <Width>18.49389cm</Width>
             <Style />
           </Tablix>
         </ReportItems>
         <Height>4.46283in</Height>
         <Style />
       </Body>
-      <Width>19.75336cm</Width>
+      <Width>18.49389cm</Width>
       <Page>
         <PageHeader>
           <Height>3.88903in</Height>
@@ -2385,7 +2396,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>4.55068cm</Top>
-              <Left>13.25387cm</Left>
+              <Left>12.30137cm</Left>
               <Height>11pt</Height>
               <Width>6.19252cm</Width>
               <ZIndex>1</ZIndex>
@@ -2412,7 +2423,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>4.12768cm</Top>
-              <Left>13.25387cm</Left>
+              <Left>12.30137cm</Left>
               <Height>11pt</Height>
               <Width>6.19252cm</Width>
               <ZIndex>2</ZIndex>
@@ -2514,7 +2525,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>4.93873cm</Top>
-              <Left>13.22864cm</Left>
+              <Left>12.27614cm</Left>
               <Height>11pt</Height>
               <Width>6.21775cm</Width>
               <ZIndex>6</ZIndex>
@@ -2566,7 +2577,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>3.70468cm</Top>
-              <Left>13.25387cm</Left>
+              <Left>12.30137cm</Left>
               <Height>11pt</Height>
               <Width>6.19252cm</Width>
               <ZIndex>8</ZIndex>
@@ -2694,7 +2705,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>161.99562pt</Top>
-              <Left>13.23957cm</Left>
+              <Left>12.28707cm</Left>
               <Height>11pt</Height>
               <Width>2.43519in</Width>
               <ZIndex>13</ZIndex>
@@ -2724,7 +2735,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>150.99562pt</Top>
-              <Left>13.22864cm</Left>
+              <Left>12.27614cm</Left>
               <Height>11pt</Height>
               <Width>2.4423in</Width>
               <ZIndex>14</ZIndex>
@@ -2735,13 +2746,13 @@ Cstr(Fields!PaymentTermsDesc.Value)
               </Style>
             </Textbox>
             <Image Name="ImageRight">
-              <Source>Embedded</Source>
-              <Value>Logo</Value>
-              <MIMEType>image/jpeg</MIMEType>
+              <Source>Database</Source>
+              <Value>=First(Fields!CompanyPicture.Value, "DataSet_Result")</Value>
+              <MIMEType>image/bmp</MIMEType>
               <Sizing>FitProportional</Sizing>
-              <Left>14.56444cm</Left>
-              <Height>1.32292cm</Height>
-              <Width>3.92431cm</Width>
+              <Left>14.5468cm</Left>
+              <Height>2.3941cm</Height>
+              <Width>3.62445cm</Width>
               <ZIndex>15</ZIndex>
               <Style>
                 <Border>
@@ -2772,7 +2783,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
               <Top>9.24952cm</Top>
               <Left>0.07771cm</Left>
               <Height>11.61905pt</Height>
-              <Width>3.59941cm</Width>
+              <Width>2.40485cm</Width>
               <ZIndex>16</ZIndex>
               <Style>
                 <VerticalAlign>Bottom</VerticalAlign>
@@ -2800,9 +2811,9 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>9.24314cm</Top>
-              <Left>3.67712cm</Left>
+              <Left>2.48256cm</Left>
               <Height>11.80002pt</Height>
-              <Width>3.51619cm</Width>
+              <Width>3.44075cm</Width>
               <ZIndex>17</ZIndex>
               <Style>
                 <VerticalAlign>Bottom</VerticalAlign>
@@ -2831,7 +2842,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>9.24314cm</Top>
-              <Left>7.18729cm</Left>
+              <Left>5.91729cm</Left>
               <Height>11.80009pt</Height>
               <Width>5.90512cm</Width>
               <ZIndex>18</ZIndex>
@@ -2862,7 +2873,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>9.24314cm</Top>
-              <Left>13.09241cm</Left>
+              <Left>11.82241cm</Left>
               <Height>11.80009pt</Height>
               <Width>3.24893cm</Width>
               <ZIndex>19</ZIndex>
@@ -2892,7 +2903,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
               <Top>3.80292in</Top>
               <Left>0.03059in</Left>
               <Height>5pt</Height>
-              <Width>7.70119in</Width>
+              <Width>7.20119in</Width>
               <ZIndex>20</ZIndex>
               <Style>
                 <Border>
@@ -3077,7 +3088,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>3.31662cm</Top>
-              <Left>13.23957cm</Left>
+              <Left>12.28707cm</Left>
               <Height>11pt</Height>
               <Width>6.19252cm</Width>
               <ZIndex>27</ZIndex>
@@ -3104,7 +3115,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>2.89362cm</Top>
-              <Left>13.23957cm</Left>
+              <Left>12.28707cm</Left>
               <Height>11pt</Height>
               <Width>6.19252cm</Width>
               <ZIndex>28</ZIndex>
@@ -3131,7 +3142,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>2.46466cm</Top>
-              <Left>13.25387cm</Left>
+              <Left>12.30137cm</Left>
               <Height>11pt</Height>
               <Width>6.18537cm</Width>
               <ZIndex>29</ZIndex>
@@ -3160,7 +3171,7 @@ Cstr(Fields!PaymentTermsDesc.Value)
                 </Paragraph>
               </Paragraphs>
               <Top>9.24314cm</Top>
-              <Left>16.34133cm</Left>
+              <Left>15.07133cm</Left>
               <Height>11.80009pt</Height>
               <Width>3.29739cm</Width>
               <ZIndex>30</ZIndex>
@@ -3177,10 +3188,10 @@ Cstr(Fields!PaymentTermsDesc.Value)
         <PageWidth>8.27in</PageWidth>
         <InteractiveHeight>11in</InteractiveHeight>
         <InteractiveWidth>8.5in</InteractiveWidth>
-        <LeftMargin>0in</LeftMargin>
-        <RightMargin>0.41667in</RightMargin>
-        <TopMargin>0.31667in</TopMargin>
-        <BottomMargin>0.58333in</BottomMargin>
+        <LeftMargin>0.3in</LeftMargin>
+        <RightMargin>0.3in</RightMargin>
+        <TopMargin>0.3in</TopMargin>
+        <BottomMargin>0.3in</BottomMargin>
         <Style />
       </Page>
     </ReportSection>
@@ -3302,6 +3313,9 @@ tB/4R+5jjdSlxAEKI7Ar99ckgjjPajQNTmNe+L194b8GeGbrR9R0bdcaMl8bPxFcSvfzrsBHMQxkjILt
       <Fields>
         <Field Name="No_Cust">
           <DataField>No_Cust</DataField>
+        </Field>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
         </Field>
         <Field Name="CompanyInfo1Picture">
           <DataField>CompanyInfo1Picture</DataField>

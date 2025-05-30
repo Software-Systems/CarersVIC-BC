@@ -142,9 +142,11 @@ report 50106 "CarersVIC Remitt. Adv. Posted"
             }
             column(CompanyInfoACN; CompanyInfo."IRD No.")
             {
-
             }
             column(CompanyInfoEmail; CompanyInfo."E-Mail")
+            {
+            }
+            column(CompanyPicture; CompanyInfo.Picture)
             {
 
             }
@@ -357,6 +359,7 @@ report 50106 "CarersVIC Remitt. Adv. Posted"
     trigger OnPreReport()
     begin
         CompanyInfo.Get();
+        CompanyInfo.CalcFields(CompanyInfo.Picture);
         FormatAddr.Company(CompanyAddr, CompanyInfo);
         GLSetup.Get();
         GLSetup.TestField("LCY Code");

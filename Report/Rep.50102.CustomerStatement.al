@@ -19,6 +19,9 @@ report 50102 "CarersVIC Statement"
             {
                 DataItemTableView = sorting(Number) where(Number = const(1));
                 PrintOnlyIfDetail = true;
+                column(CompanyPicture; CompanyInfo.Picture)
+                {
+                }
                 column(CompanyInfo1Picture; CompanyInfo1.Picture)
                 {
                 }
@@ -619,6 +622,7 @@ report 50102 "CarersVIC Statement"
                 CalcAgingBandDates();
 
                 CompanyInfo.Get();
+                CompanyInfo.CalcFields(CompanyInfo.Picture);
                 FormatAddr.Company(CompanyAddr, CompanyInfo);
 
                 CustLedgerEntry.Reset();
