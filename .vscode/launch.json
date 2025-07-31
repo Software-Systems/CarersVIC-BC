@@ -2,11 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Microsoft cloud sandbox",
+            "name": "CarersVicDev9",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "CarersVicDev8",
+            "environmentName": "CarersVicDev9",
             "startupObjectType": "Page",
             "startupObjectId": 25,
             "breakOnError": "All",

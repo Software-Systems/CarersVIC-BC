@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+  <am:AuthoringMetadata>
+    <am:CreatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.0.20283.0</am:Version>
+    </am:CreatedBy>
+    <am:UpdatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.0.20283.0</am:Version>
+    </am:UpdatedBy>
+    <am:LastModifiedTimestamp>2025-07-29T05:15:28.8529000Z</am:LastModifiedTimestamp>
+  </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
@@ -478,12 +489,13 @@ Cstr(Fields!Posting_Date.Value),1)</Hidden>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
             <Image Name="ImageRight">
-              <Source>Embedded</Source>
-              <Value>Logo</Value>
+              <Source>Database</Source>
+              <Value>=First(Fields!CompanyInfoPicture.Value, "DataSet_Result")</Value>
               <MIMEType>image/jpeg</MIMEType>
+              <Sizing>FitProportional</Sizing>
               <Top>0.35513cm</Top>
               <Left>15.57972cm</Left>
-              <Height>0.9525cm</Height>
+              <Height>1.85208cm</Height>
               <Width>2.83986cm</Width>
               <Style>
                 <Border>
@@ -1256,6 +1268,9 @@ tB/4R+5jjdSlxAEKI7Ar99ckgjjPajQNTmNe+L194b8GeGbrR9R0bdcaMl8bPxFcSvfzrsBHMQxkjILt
   <DataSets>
     <DataSet Name="DataSet_Result">
       <Fields>
+        <Field Name="CompanyInfoPicture">
+          <DataField>CompanyInfoPicture</DataField>
+        </Field>
         <Field Name="Vendor_Bank_Account">
           <DataField>Vendor_Bank_Account</DataField>
         </Field>

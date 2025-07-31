@@ -63,6 +63,9 @@ pageextension 50039 "Payment Journal Ext" extends "Payment Journal"
         {
             Actionref(CreateABAPaymentFile_Promoted; CreateABAPaymentFile)
             {
+            }
+            actionref(PrintRemittanceAdvance_Promoted; PrintRemittanceAdvance)
+            {
 
             }
         }

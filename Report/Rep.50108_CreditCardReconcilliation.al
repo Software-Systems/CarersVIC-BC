@@ -55,7 +55,7 @@ report 50108 "CR Credit Card Reconcilliation"
             column(OpeningBalance; OpeningBalance)
             {
             }
-            column(GLClosingBalance; GLClosingBalance)
+            column(BankClosingBalance; BankClosingBalance)
             {
             }
 
@@ -95,10 +95,10 @@ report 50108 "CR Credit Card Reconcilliation"
                         ApplicationArea = All;
                         Caption = 'Show Details';
                     }
-                    field(GLClosingBalance; GLClosingBalance)
+                    field(BankClosingBalance; BankClosingBalance)
                     {
                         ApplicationArea = All;
-                        Caption = 'GL Closing Balance';
+                        Caption = 'Bank Closing Balance';
                     }
                 }
             }
@@ -108,7 +108,7 @@ report 50108 "CR Credit Card Reconcilliation"
         ShowDetails: Boolean;
         GLEntry2: Record "G/L Entry";
         OpeningBalance: Decimal;
-        GLClosingBalance: Decimal;
+        BankClosingBalance: Decimal;
 
     local procedure GetBalAccName(ParBalAccType: Enum "Gen. Journal Account Type"; ParBalAccNo: Code[20]) RetValue: Text
     var

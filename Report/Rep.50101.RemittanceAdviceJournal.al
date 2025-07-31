@@ -83,6 +83,10 @@ report 50101 "Remittance Advice - Jrnl"
             column(VendAddr7; VendorAddr[7])
             {
             }
+            column(CompInfoPicture; CompanyInfo."Picture")
+            {
+            }
+
             column(CompInfoPhoneNo; CompanyInfo."Phone No.")
             {
             }
@@ -480,6 +484,7 @@ report 50101 "Remittance Advice - Jrnl"
     trigger OnPreReport()
     begin
         CompanyInfo.Get();
+        CompanyInfo.CalcFields(CompanyInfo.Picture);
         FormatAddr.Company(CompanyAddr, CompanyInfo);
         GLSetup.Get();
     end;

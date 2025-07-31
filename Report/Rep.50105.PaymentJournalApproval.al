@@ -11,6 +11,8 @@ report 50105 "Payment Journal Approval"
     {
         dataitem(PaymentFileData; "Payment File Data")
         {
+            column(CompanyInfoPicture; CompanyInfo.Picture)
+            { }
             column(Vendor_Bank_Account; "Vendor Bank Account")
             { }
             column(Vendor_Name; "Vendor Name")
@@ -41,7 +43,14 @@ report 50105 "Payment Journal Approval"
             end;
         }
     }
+
+    trigger OnPreReport()
+    begin
+        CompanyInfo.Get;
+        CompanyInfo.CalcFields(CompanyInfo.Picture);
+    end;
+
     var
-        myInt: Integer;
+        CompanyInfo: Record "Company Information";
         Total: Decimal;
 }
