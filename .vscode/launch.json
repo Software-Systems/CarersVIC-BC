@@ -2,11 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "CarersVicDev9",
+            "name": "CarersVicDev 11",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "CarersVicDev8",
+            "environmentName": "CarersVicDev11",
             "startupObjectType": "Page",
             "startupObjectId": 25,
             "breakOnError": "All",

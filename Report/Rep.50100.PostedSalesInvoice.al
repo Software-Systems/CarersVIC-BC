@@ -635,6 +635,7 @@ report 50100 "CarersVIC Sales - Invoice"
                     PaymentServiceSetup: Record "Payment Service Setup";
                     Currency: Record Currency;
                     GeneralLedgerSetup: Record "General Ledger Setup";
+                    SInvHeader: Record "Sales Invoice Header";
                 begin
 
 
@@ -656,7 +657,15 @@ report 50100 "CarersVIC Sales - Invoice"
                     if not Cust.Get("Bill-to Customer No.") then
                         Clear(Cust);
 
-                    TotalSubTotal += "Line Amount";
+                    //Stanley #START 2025-09-24
+                    if SInvHeader.Get("Document No.") then begin
+                        if SInvHeader."Prices Including VAT" = True then
+                            TotalSubTotal += Amount
+                        else
+                            TotalSubTotal += "Line Amount";
+                    end;
+                    //Stanley #END 2025-09-24
+                    //TotalSubTotal += "Line Amount";
                     TotalAmountVAT += "Amount Including VAT" - Amount;
                     TotalAmountInclVAT += "Amount Including VAT";
 
